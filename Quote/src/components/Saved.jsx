@@ -8,7 +8,7 @@ const Saved = ({refresh}) => {
   useEffect(() => {
     const fetchQuotes = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/quotes/all');
+        const response = await axios.get('https://quote-server-sage.vercel.app/quotes/all');
         setQuotes(response.data.allquotes);
       } catch (error) {
         console.error("Error fetching quotes:", error);

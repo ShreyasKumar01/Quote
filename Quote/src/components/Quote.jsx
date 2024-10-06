@@ -11,7 +11,7 @@ const Quote = ({ quote }) => {
 
     const handleSaveQuote = async () => {
         try {
-          const response = await axios.post('http://localhost:8000/quote/save', {
+          const response = await axios.post('https://quote-server-sage.vercel.app/quote/save', {
             quote,
           });
 

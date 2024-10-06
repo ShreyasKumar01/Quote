@@ -1,0 +1,132 @@
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.first{
+  color: rgb(180, 0, 0);
+  padding-right: 0.70rem;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.quote-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 900px; /* Larger width */
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+.quote-card:hover {
+  transform: scale(1.025); /* Scales the card on hover */
+}
+
+.quote-card::before {
+  content: '“'; /* Rounded quotes */
+  font-size: 60px;
+  color: rgb(180, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.quote-card::after {
+  content: '”'; /* Rounded quotes */
+  font-size: 60px;
+  color: rgb(180, 0, 0);
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+}
+
+.quote-text {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333; /* Dark grey or change to black if preferred */
+}
+
+.quote-card-saved {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 900px; /* Larger width */
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  margin-bottom: 1rem;
+}
+
+.quote-card-saved::before {
+  content: '“'; /* Rounded quotes */
+  font-size: 60px;
+  color: #333;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.quote-card-saved::after {
+  content: '”'; /* Rounded quotes */
+  font-size: 60px;
+  color: #333;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+}
+
+.quote-text-saved {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333; /* Dark grey or change to black if preferred */
+}
+
+
+.btn-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #df1600; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn:hover {
+  background-color: #df1600; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.btn:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.heading2{
+  color: #3a3a3a;
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}

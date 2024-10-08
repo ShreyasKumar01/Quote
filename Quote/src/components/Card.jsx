@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 
 const Card = ({quote}) => {
+  const [select, setSelect]=useState(true);
+
+  const handleCardClick= () =>{
+    setSelect(!select);
+  }
+
   return (
     <>
-      <div className="quote-card-saved">
-      <p className="quote-text-saved">
-            {quote}
-      </p>
+      <div className="quote-card-saved" onClick={handleCardClick}>
+      {/* {
+        select ?( */}
+          <p className="quote-text-saved">
+          {quote}
+          </p>
+      {/*   ):(
+          <button> Delete </button>
+       )
+     } */}
     </div>
     </>
   )
